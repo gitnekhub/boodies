@@ -1,6 +1,6 @@
 @import url(font-awesome.min.css);
-@import url(https://fonts.googleapis.com/css?family=Patta|Work+Sans:400,200,300);
-
+@import url(https://fonts.googleapis.com/css?family=Pattaya|Work+Sans:400,200,300);
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap);
 /*
 	Radius by TEMPLATED
 	templated.co @templatedco
@@ -14,7 +14,7 @@
 		padding: 0;
 		border: 0;
 		font-size: 100%;
-		/* font: inherit; */
+		font: inherit;
 		vertical-align: baseline;
 	}
 .image.fit img {
@@ -96,7 +96,7 @@
 	}
 
 	body, input, select, textarea {
-		font-family: Montserrat;
+		font-family: "Work Sans", sans-serif;
 		font-size: 13pt;
 		font-weight: 300;
 		line-height: 1.65;
@@ -216,7 +216,7 @@
 	code {
 		border-radius: 4px;
 		border: solid 1px;
-		font-family: Montserrat;
+		font-family: "Courier New", monospace;
 		font-size: 0.9em;
 		margin: 0 0.25em;
 		padding: 0.25em 0.65em;
@@ -224,7 +224,7 @@
 
 	pre {
 		-webkit-overflow-scrolling: touch;
-		font-family: Montserrat;
+		font-family: "Courier New", monospace;
 		font-size: 0.9em;
 		margin: 0 0 2em 0;
 	}
@@ -263,7 +263,7 @@
 	}
 
 	a {
-		color: #964B00;
+		color: #e74c3c;
 	}
 
 	strong, b {
@@ -362,7 +362,7 @@
 		button.alt,
 		.button.alt {
 			background: #FFF;
-			color: #964B00;
+			color: #4d2603;
 		}
 
 		input[type="submit"].fit,
@@ -469,7 +469,7 @@
 		.select-wrapper:before {
 			-moz-osx-font-smoothing: grayscale;
 			-webkit-font-smoothing: antialiased;
-			font-family: Montserrat;
+			font-family: FontAwesome;
 			font-style: normal;
 			font-weight: normal;
 			text-transform: none !important;
@@ -533,7 +533,7 @@
 			input[type="radio"] + label:before {
 				-moz-osx-font-smoothing: grayscale;
 				-webkit-font-smoothing: antialiased;
-				font-family: Montserrat;
+				font-family: FontAwesome;
 				font-style: normal;
 				font-weight: normal;
 				text-transform: none !important;
@@ -626,15 +626,15 @@
 
 	input[type="checkbox"]:checked + label:before,
 	input[type="radio"]:checked + label:before {
-		background-color: #e74c3c;
-		border-color: #e74c3c;
+		background-color: #4d2603;
+		border-color: #4d2603;
 		color: #ffffff;
 	}
 
 	input[type="checkbox"]:focus + label:before,
 	input[type="radio"]:focus + label:before {
-		border-color: #e74c3c;
-		box-shadow: 0 0 0 1px #e74c3c;
+		border-color: #4d2603;
+		box-shadow: 0 0 0 1px #4d2603;
 	}
 
 	::-webkit-input-placeholder {
@@ -668,7 +668,7 @@
 		.icon:before {
 			-moz-osx-font-smoothing: grayscale;
 			-webkit-font-smoothing: antialiased;
-			font-family: Montserrat;
+			font-family: FontAwesome;
 			font-style: normal;
 			font-weight: normal;
 			text-transform: none !important;
@@ -1245,7 +1245,7 @@
 			display: -ms-flexbox;
 			-ms-flex-align: center;
 			-ms-flex-pack: center;
-			background: #444;
+			background: #4d2603;
 			border-radius: 100%;
 			width: 35em;
 			height: 35em;
@@ -1264,7 +1264,7 @@
 			}
 
 				#header .inner .content h1 {
-					font-size: 4em;
+					font-size: 3.5em;
 					font-family: Montserrat;
 					margin: 0 0 .25em 0;
 					color: #fff;
@@ -1337,9 +1337,9 @@
 				#header.hide .button.hidden:before, #header.preview .button.hidden:before {
 					-moz-osx-font-smoothing: grayscale;
 					-webkit-font-smoothing: antialiased;
-					font-family: Montserrat;
+					font-family: FontAwesome;
 					font-style: normal;
-					font-weight: bold;
+					font-weight: normal;
 					text-transform: none !important;
 				}
 
@@ -1415,7 +1415,7 @@
 			display: inline-block;
 			text-decoration: none;
 			border-radius: 50% 50% 0 0;
-			background: #0c0601;
+			background: #4d2603;
 			width: 3em;
 			height: 3em;
 			margin-bottom: -1.75em;
@@ -1461,94 +1461,68 @@
 			}
 .copyright {
 	background: #4d2603;
-	width: 1685px;
-	height: 330px;
+	width: 100%;
+	text-align: center;
 	color: white;
 	font-weight: 200;
-	display: flex;
+	padding: 2em 0 2em 0;
+	display: inline-block;
 	font-size: 1em;
 }
-.div1{
-	width: 650px;
-	height: 330px;
-	display: flex;
-	flex-direction: column;
-	
-}
-.maps {
-	width: 580px;
-	height: 265.8;
-	padding-left: 25px;
-}
-.loc{
-	padding: 10px;
-}
-
-.div2{
-	width: 300px;
-}
-
-h1 
-  
-social-menu ul {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 0;
-    margin: 0;
-    
-}
-
-.social-menu ul  .fa {
-    color: #000000;
-    font-size: 25px;
-    line-height: 50px;
-    transition: .5s;
-}
-.social-menu ul  .fa:hover {
-    color: #ffffff;
-}
-.social-menu ul a {
-    position: relative;
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: white;
-    text-align: center;
-    transition: 0.5s;
-    transform: translate(0,0px);
-    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
-}
-.social-menu ul a:hover {
-    transform: rotate(0deg) skew(0deg) translate(0, -10px);
-}
-.social-menu ul :nth-child(1) a:hover {
-    background-color: #3b5999;
-}
-.social-menu ul :nth-child(2) a:hover {
-    background-color: #55acee;
-}
-.social-menu ul :nth-child(3) a:hover {
-    background-color: #e4405f;
-}
-.social-menu ul :nth-child(4) a:hover {
-    background-color: #cd201f;
-}
-.social-menu ul :nth-child(5) a:hover {
-    background-color: #0077B5;
-}
-
-.div3{
+.copyright a {
+	background: #4d2603;
+	text-align: center;
+	color: white;
+	text-decoration: none;
+	font-weight: 900;
+	padding: 2em 0 2em 0;
 	display: inline-block;
-	margin-top: 10px;
-	font-size: 20px;
-	width: 200px;
+	font-size: 1em;
 }
-.div4{
-	margin-top: 10px;
-}
+				#footer .inner .content h3,
+				#footer .inner .copyright h3 {
+					color: #FFF;
+					font-size: 1.75em;
+				}
+
+				#footer .inner .content a,
+				#footer .inner .copyright a {
+					color: #FFF;
+				}
+
+					#footer .inner .content a:hover,
+					#footer .inner .copyright a:hover {
+						color: black;
+					}
+
+				#footer .inner .content p,
+				#footer .inner .copyright p {
+					margin: 0;
+				}
+
+			#footer .inner .copyright ul {
+				border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+				padding-bottom: 1em;
+			}
+
+			#footer .inner .content button{
+				width: 180px;
+				font-family: Montserrat;
+				border-radius: 10px;
+				background-color: black;
+				color: white;
+				
+			}
+
+			#footer .inner .content button:hover {
+				cursor: pointer;
+				background-color: white;
+				color: black;
+				transition-delay: 100;
+				
+			}
+
+
 		@media screen and (max-width: 980px) {
 
 			#footer {
