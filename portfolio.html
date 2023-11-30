@@ -9,92 +9,152 @@
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   <style>
-    .main {
-      display: flex;
-      flex-direction: column;
-      align-items: center; /* Center content horizontally */
-      height: 100vh; /* Set height to 100% of viewport height */
-      width: 100vw;
-    }
+   * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    .header {
-      height: 10vh; /* Set height to 10% of viewport height */
-      line-height: 10vh;
-      background-color: lightblue;
-      text-align: center;
-      width: 100vw;
-      font-size: 4vw; /* Set font size to 4% of viewport width */
-      font-size: 3vh;
-      font-weight: bold;
-    }
+        .header {
+              height: 10vh; /* Set height to 10% of viewport height */
+              line-height: 10vh;
+              background-color: #4d2603;
+              text-align: center;
+              width: 100vw;
+              font-size: 4vw; /* Set font size to 4% of viewport width */
+              font-size: 3vh;
+              font-weight: bold;
+              color: white;
+        }       
+       .title{
+        height: 10vh; /* Set height to 10% of viewport height */
+              line-height: 10vh;
+              
+              text-align: center;
+              width: 100vw;
+              font-size: 2vw; /* Set font size to 4% of viewport width */
+              font-size: 2vh;
+              font-weight: bold;
+              
 
-    .tnb1 {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
+          }
 
-    .title {
-      /* Set font size to 3% of viewport width */
-      margin-top: 2vh; /* Add some space from the top */
-      text-align: center;
-      font-size: 3.5vw;
-    }
 
-    .body {
-      display: flex;
-      flex-wrap: wrap; /* Enable wrapping for smaller screens */
-      justify-content: center;
-      width: 90%;
-    }
+        .body1 {
+            background-color: white;
+            padding-top: -10vh;
+            margin-bottom: 10vh;
+        }
 
-    .column1,
-    .column2 {
-      flex: 1;
-      max-width: 500px; /* Set a maximum width for each column */
-      margin: 10px; /* Add margin between columns */
-    }
+        .swiper-container {
+            width: 80%;
+            height: 80vh;
+            margin: auto;
+            position: relative;
+        }
 
-    .column1 img,
-    .column2 img {
-      width: 100%; /* Make images fill their container */
-      height: auto; /* Maintain aspect ratio */
-    }
+        .swiper-slide {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
-    @media screen and (max-width: 768px) {
-      /* Adjust styles for screens smaller than 768px width (e.g., mobile devices) */
-      .body {
-        flex-direction: column; /* Stack columns on top of each other */
-      }
+        .swiper-slide img {
+            max-width: 100%;
+            max-height: 100%;
+            width: auto;
+            height: auto;
+            object-fit: contain;
+        }
 
-      .column1,
-      .column2 {
-        max-width: 100%; /* Allow columns to take full width on smaller screens */
-      }
-    }
-  </style>
+        .swiper-button-prev,
+        .swiper-button-next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 30px;
+            height: 30px;
+            background-color: transparent; /* Set background to transparent */
+            border: none; /* Remove border */
+            color: #000; /* Change arrow color */
+            font-size: 20px; /* Adjust arrow size */
+            cursor: pointer;
+        }
+
+        .swiper-button-prev:hover,
+        .swiper-button-next:hover {
+            color: #555; /* Change arrow color on hover */
+        }
+    </style>
 </head>
 
 <body>
-  <div class="main">
     <div class="header">
       Boodie's Catering Portfolio
     </div>
-    <div class="tnb1">
-      <div class="title">
-        <p style="margin-bottom: 0;">Fountain Grove House Blessing</p>
-      </div>
-      <div class="body">
-        <div class="column1">
-          <img src="pics/cater3.jpg" alt="">
-        </div>
-        <div class="column2">
-          <img src="pics/cater2.jpg" alt="">
-        </div>
-      </div>
+    <div class="title">
+      House Blessing at Fountain Grove
     </div>
+    <div class="body1">
+       <!-- Slider main container -->
+    <div class="swiper-container">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="fountaingrove/1.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="fountaingrove/2.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="fountaingrove/3.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="fountaingrove/4.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="fountaingrove/5.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="fountaingrove/6.jpg" alt=""></div>
+          <!-- Add more slides as needed -->
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
   </div>
+    </div>
+    <!-- Footer -->
+			<footer id="footer"><a href="#" class="info fa fa-info-circle"><span>About</span></a>
+				<div class="inner">
+					<div class="content">
+						<h1><button onclick="window.location.href='index.html'">Home</button></h1>
+						<h1><button onclick="window.location.href='menu.html'">Menu</button></h1>
+        		<h1><button onclick="window.location.href='portfolio.html'">Catering Portfolio</button></h1>
+        		<h1><button onclick="window.location.href='contact.html'">Contact Us</button></h1>
+        
+					</div>
+					<div class="copyright">
+						<h3>Our Socials</h3>
+						<ul class="icons"><li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="https://facebook.com/boodiesbatchoy" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="https://instagram.com/boodiesbistro" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+						
+						</ul></div>
+				</div>
+			</footer><div class="copyright">
+			To avail our free hotspot, please fill out this <a href="https://forms.gle/iiew9PtfGzCrmtrX8">form.</a>
+		</div>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script><script src="assets/js/skel.min.js"></script><script src="assets/js/util.js"></script><script src="assets/js/main.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script>
+        
+        document.addEventListener('DOMContentLoaded', function () {
+    const swiper = new Swiper('.swiper-container', {
+        direction: 'horizontal',
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+});
+
+      </script>
 
   
 </body>
